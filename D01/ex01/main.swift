@@ -5,31 +5,32 @@
 //  Created by Jochum Wilen on 6/5/21.
 //
 
-func test()
-{
-    print("\nColours:")
-    let allColourTab = Color.allColors
-    for eachcolor in allColourTab
-    {
-        print("Name: \(eachcolor), value: \(eachcolor.rawValue)")
-    }
-    print("\nValues:")
-    let allValueTab = Value.allValues
-    for eachvalue in allValueTab
-    {
-        print("Name: \(eachvalue), value: \(eachvalue.rawValue)")
-    }
-    print("\nThe Deck contains the following cards:")
-    var i = 0;
-    for eachcard in allColourTab
-    {
-        for eachnbr in allValueTab
-        {
-        print("Color: \(eachcard.rawValue), Value: \(eachnbr.rawValue)")
-            i += 1
-        }
-    }
-    print("Number of cards in the deck: \(i)" )
-}
+let card1 : Card = Card(color: Color.spades, value: Value.Eight)
+let card2 : Card = Card(color: Color.clubs, value: Value.Ace)
+let card3 : Card = Card(color: Color.hearts, value: Value.Four)
+let card4 : Card = Card(color: Color.diamonds, value: Value.King)
 
-test()
+print(card1)
+print("Cards we have:")
+print("Card 1 is: \(card1)")
+print("Card 2 is: \(card2)")
+print("Card 3 is: \(card3)")
+print("Card 4 is: \(card4)")
+print("\n *** Test for override function ***")
+print("Test if Card 1 is equal to Card 2")
+print(card1.isEqual(card2))
+print("Test if Card 1 is equal to Card 3")
+print(card1.isEqual(card3))
+print("Test if Card 1 is equal to Card 4")
+print(card1.isEqual(card4))
+print("Test if Card 1 is equal to Card 1")
+print(card1.isEqual(card1))
+print("\n *** Test for overload operator ***")
+print("Test if Card 1 is equal to Card 2")
+print(card1 == card2)
+print("Test if Card 1 is equal to Card 3")
+print(card1 == card3)
+print("Test if Card 1 is equal to Card 4")
+print(card1 == card4)
+print("Test if Card 1 is equal to Card 1")
+print(card1 == card1)
