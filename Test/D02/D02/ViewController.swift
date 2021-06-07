@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewControllerB: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
+ 
+    @IBAction func goToBTapped(_ sender: Any) {
+            performSegue(withIdentifier: “segueToB”, sender: self)
+        }
+    }
+ 
 
-
-}
 
