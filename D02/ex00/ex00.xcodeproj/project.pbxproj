@@ -13,6 +13,8 @@
 		34731B38266E6FD300A50296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34731B36266E6FD300A50296 /* Main.storyboard */; };
 		34731B3A266E6FD300A50296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34731B39266E6FD300A50296 /* Assets.xcassets */; };
 		34731B3D266E6FD300A50296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34731B3B266E6FD300A50296 /* LaunchScreen.storyboard */; };
+		34F71625266F3011001C369C /* Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F71624266F3011001C369C /* Names.swift */; };
+		34F7162F266F3842001C369C /* DeathTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F7162E266F3842001C369C /* DeathTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		34731B39266E6FD300A50296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34731B3C266E6FD300A50296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34731B3E266E6FD300A50296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34F71624266F3011001C369C /* Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Names.swift; sourceTree = "<group>"; };
+		34F7162E266F3842001C369C /* DeathTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				34731B30266E6FD300A50296 /* AppDelegate.swift */,
+				34F7162E266F3842001C369C /* DeathTableViewCell.swift */,
+				34F71624266F3011001C369C /* Names.swift */,
 				34731B32266E6FD300A50296 /* SceneDelegate.swift */,
 				34731B34266E6FD300A50296 /* ViewController.swift */,
 				34731B36266E6FD300A50296 /* Main.storyboard */,
@@ -140,7 +146,9 @@
 			files = (
 				34731B35266E6FD300A50296 /* ViewController.swift in Sources */,
 				34731B31266E6FD300A50296 /* AppDelegate.swift in Sources */,
+				34F71625266F3011001C369C /* Names.swift in Sources */,
 				34731B33266E6FD300A50296 /* SceneDelegate.swift in Sources */,
+				34F7162F266F3842001C369C /* DeathTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

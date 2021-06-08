@@ -10,8 +10,54 @@ import UIKit
 
 class ViewController: UIViewController {
 
-  
+    @IBOutlet var tableView: UITableView!
+    
+//    let fnamn = [
+//    "Jocke",
+//    "Ylva",
+//    "Lillemor"
+//    ]
+//
+//    let enamn = [
+//    "Wilen",
+//    "Kallio",
+//    "Ek"]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+      
+    tableView.delegate = self
+    tableView.dataSource = self
+     
+    }
 
+}
 
+extension ViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("You tapped me!")
+    }
+}
+
+extension ViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Data.death.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DeathTableViewCell
+
+        cell.record = Data.death[indexPath.row]
+//        cell.textLabel?.text = Data.death[indexPath.row].0
+//        cell.detailTextLabel?.text = Data.death[indexPath.row].1
+        return cell
+    }
 }
 
