@@ -9,18 +9,8 @@
 import Foundation
 
 struct Data {
-    static let death : [(String, String)] = [
-        ("John F. Kennedy", "Shot in the head"),
-        ("Leonid Breznev", "Died of age"),
-        ("Idriss Deby", "Covid 19"),
-        ("John Smith", "Heart attack"),
-        ("Isac Newton", "Car crash"),
-        ("Ronald Reagan", "Unknown"),
-        ("John Wayen", "Broke a leg"),
-        ("Chris Waller", "Murderd"),
-        ("Elton John", "Wife stabbed"),
-        ("Mother Theresa", "HIV"),
-        ("Walk Man", "Boored"),
-        ("Bill Gant", "Own hand")
+    static var death : [(String, String, String)] = [
+        ("John F. Kennedy", "Shot in the head", "22 Nove 1963 18:22:00"),
+        ("Leonid Breznev", "Died of age", "10 Dece 1982 01:11:01")
     ]
 }

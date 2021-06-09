@@ -28,17 +28,28 @@ class ViewControllerB: UIViewController {
         date.dateFormat = "dd MMMM yyyy"
         let formatDate = date.string(from: rip_calender.date)
         print("Date: \(formatDate)")
+        if rip_name.text != "" {
+            performSegue(withIdentifier: "cell", sender: self)
+        }
     }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        rip_calender.minimumDate = Date()
+        rip_name.placeholder = "name"
+        rip_description.text = nil
+        rip_description.layer.borderWidth = 1
+        rip_description.layer.borderColor = UIColor.black.cgColor
     }
     
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let format = DateFormatter()
+        format.dateFormat = "dd MMMM yyyy HH:mm:ss"
+        let date = format.string(from:rip_calender.date)
+        Data.death.append((rip_name.text!, rip_description.text!, date))
 //         Get the new view controller using segue.destination.
 //         Pass the selected object to the new view controller.
     }

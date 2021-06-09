@@ -11,15 +11,17 @@ import UIKit
 class DeathTableViewCell: UITableViewCell {
 
    
+    @IBOutlet weak var timeCell: UILabel!
     @IBOutlet weak var nameCell: UILabel!
     
     @IBOutlet weak var descriptionCell: UILabel!
     
-    var record : (String, String)? {
+    var record : (String, String, String)? {
         didSet {
             if let d = record {
                 nameCell?.text = d.0
                 descriptionCell?.text = d.1
+                timeCell?.text = d.2
             }
         }
     }

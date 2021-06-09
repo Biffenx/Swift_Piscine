@@ -45,6 +45,12 @@ extension ViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DeathTableViewCell
 
         cell.record = Data.death[indexPath.row]
+        cell.nameCell?.numberOfLines = 0
+        cell.descriptionCell?.numberOfLines = 0
+        cell.timeCell?.numberOfLines = 0
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 44
+        
         return cell
     }
 }
