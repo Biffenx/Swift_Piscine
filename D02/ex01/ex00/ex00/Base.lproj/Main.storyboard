@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F1a-Cn-oXp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F1a-Cn-oXp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +19,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HHf-cY-CVe">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="119" id="Baj-pD-5EU" customClass="DeathTableViewCell" customModule="ex00" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="119"/>
@@ -66,14 +68,14 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="HHf-cY-CVe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6yH-ll-GUI"/>
                             <constraint firstItem="HHf-cY-CVe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SEH-Aw-8HF"/>
                             <constraint firstItem="HHf-cY-CVe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TSB-zE-XMk"/>
                             <constraint firstItem="HHf-cY-CVe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Zkm-uN-O8q"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Death Note" id="DyM-ID-B3Y">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Nb2-bt-A9P">
@@ -93,7 +95,7 @@
         <!--R.I.P-->
         <scene sceneID="AdH-LW-AWr">
             <objects>
-                <viewController id="Uq0-S5-LDC" sceneMemberID="viewController">
+                <viewController id="Uq0-S5-LDC" customClass="ViewControllerB" customModule="ex00" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GA2-yH-Qfk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,7 +107,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3K-8v-vim">
-                                <rect key="frame" x="42" y="265" width="93" height="21"/>
+                                <rect key="frame" x="42" y="265" width="92" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -117,20 +119,25 @@
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FLC-FX-F3s">
                                 <rect key="frame" x="41" y="305" width="353" height="170"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="WvB-aI-egw">
-                                <rect key="frame" x="42" y="516" width="352" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="WvB-aI-egw">
+                                <rect key="frame" x="50" y="486" width="314" height="216"/>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="602247600">
+                                    <!--2020-02-01 11:00:00 +0000-->
+                                </date>
                             </datePicker>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pTl-Yj-2s9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="FLC-FX-F3s" firstAttribute="top" secondItem="D3K-8v-vim" secondAttribute="bottom" constant="19" id="2Mf-6D-Bc5"/>
+                            <constraint firstItem="pTl-Yj-2s9" firstAttribute="trailing" secondItem="WvB-aI-egw" secondAttribute="trailing" constant="50" id="5O9-HW-qju"/>
+                            <constraint firstItem="WvB-aI-egw" firstAttribute="firstBaseline" secondItem="FLC-FX-F3s" secondAttribute="baseline" constant="11" symbolType="layoutAnchor" id="INx-AL-lnQ"/>
                             <constraint firstItem="FLC-FX-F3s" firstAttribute="leading" secondItem="pTl-Yj-2s9" secondAttribute="leading" constant="41" id="JJK-zH-RgL"/>
                             <constraint firstItem="pTl-Yj-2s9" firstAttribute="trailing" secondItem="GuM-b4-hch" secondAttribute="trailing" constant="20" id="N2L-5G-uAL"/>
                             <constraint firstItem="GuM-b4-hch" firstAttribute="leading" secondItem="D3K-8v-vim" secondAttribute="leading" id="PeQ-8h-1k8"/>
@@ -138,15 +145,24 @@
                             <constraint firstItem="Fdb-kc-V2u" firstAttribute="leading" secondItem="GuM-b4-hch" secondAttribute="leading" id="QKw-P3-uM7"/>
                             <constraint firstItem="Fdb-kc-V2u" firstAttribute="top" secondItem="pTl-Yj-2s9" secondAttribute="top" constant="106" id="RnV-zE-sYq"/>
                             <constraint firstItem="D3K-8v-vim" firstAttribute="top" secondItem="GuM-b4-hch" secondAttribute="bottom" constant="8" id="VHe-LC-kgO"/>
+                            <constraint firstItem="WvB-aI-egw" firstAttribute="centerX" secondItem="pTl-Yj-2s9" secondAttribute="centerX" id="YhI-ln-TgO"/>
                             <constraint firstItem="Fdb-kc-V2u" firstAttribute="leading" secondItem="pTl-Yj-2s9" secondAttribute="leading" constant="42" id="mhX-X8-Uqv"/>
                             <constraint firstItem="pTl-Yj-2s9" firstAttribute="bottom" secondItem="FLC-FX-F3s" secondAttribute="bottom" constant="387" id="uCG-r8-dLT"/>
                             <constraint firstItem="GuM-b4-hch" firstAttribute="top" secondItem="Fdb-kc-V2u" secondAttribute="bottom" constant="8" id="y4H-T7-9dD"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="pTl-Yj-2s9"/>
                     </view>
                     <navigationItem key="navigationItem" title="R.I.P" id="Fh6-jt-wqc">
-                        <barButtonItem key="backBarButtonItem" title="Done" id="WO4-JM-W1R"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="nsQ-Zf-rG2">
+                            <connections>
+                                <action selector="doneBtn:" destination="Uq0-S5-LDC" id="whc-gp-wRA"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="rip_calender" destination="WvB-aI-egw" id="xxm-6P-WEQ"/>
+                        <outlet property="rip_description" destination="FLC-FX-F3s" id="jo6-fO-ggK"/>
+                        <outlet property="rip_name" destination="GuM-b4-hch" id="CAn-QB-gc8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mf1-fW-f0G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,7 +171,6 @@
         <!--Navigation Controller-->
         <scene sceneID="ki4-1i-4YM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kG1-Oe-QZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F1a-Cn-oXp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CZ9-gu-M1A">
@@ -167,8 +182,17 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="g94-gF-kdU"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kG1-Oe-QZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2042.0289855072465" y="-417.1875"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
