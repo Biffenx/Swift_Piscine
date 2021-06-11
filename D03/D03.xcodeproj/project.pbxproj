@@ -14,6 +14,7 @@
 		349C7ABD267339B300EE7C3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349C7ABB267339B300EE7C3A /* LaunchScreen.storyboard */; };
 		349C7AC526733A3800EE7C3A /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349C7AC426733A3800EE7C3A /* CollectionViewController.swift */; };
 		349C7AC726733BF200EE7C3A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349C7AC626733BF200EE7C3A /* CollectionViewCell.swift */; };
+		349C7AC926734ABE00EE7C3A /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349C7AC826734ABE00EE7C3A /* Images.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		349C7ABE267339B300EE7C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		349C7AC426733A3800EE7C3A /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		349C7AC626733BF200EE7C3A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		349C7AC826734ABE00EE7C3A /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				349C7ABE267339B300EE7C3A /* Info.plist */,
 				349C7AC426733A3800EE7C3A /* CollectionViewController.swift */,
 				349C7AC626733BF200EE7C3A /* CollectionViewCell.swift */,
+				349C7AC826734ABE00EE7C3A /* Images.swift */,
 			);
 			path = D03;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				349C7AC526733A3800EE7C3A /* CollectionViewController.swift in Sources */,
 				349C7AB1267339B100EE7C3A /* AppDelegate.swift in Sources */,
+				349C7AC926734ABE00EE7C3A /* Images.swift in Sources */,
 				349C7AC726733BF200EE7C3A /* CollectionViewCell.swift in Sources */,
 				349C7AB3267339B100EE7C3A /* SceneDelegate.swift in Sources */,
 			);

@@ -10,10 +10,29 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var countryNameLabel: UILabel!
     
-    func configure(with countryName: String) {
-        countryNameLabel.text = countryName
+    @IBOutlet weak var imagePic: UIImageView!
+    
+    func configure(with imageURL: String)
+    {
+        guard let url = URL(string: imageURL) else
+        {
+            return
+        }
+        DispatchQueue.global().async
+            {[weak self] in
+            if let data = try? Data(contentsOf: url)
+            {
+                if let image = UIImage(data: data)
+                {
+                    DispatchQueue.main.async
+                        {
+                            self?.imagePic.image = image
+                        }
+                }
+            }
+        }
     }
     
+
 }
