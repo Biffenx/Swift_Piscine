@@ -28,9 +28,7 @@ class ViewControllerB: UIViewController {
         date.dateFormat = "dd MMMM yyyy"
         let formatDate = date.string(from: rip_calender.date)
         print("Date: \(formatDate)")
-        if rip_name.text != "" {
-            performSegue(withIdentifier: "cell", sender: self)
-        }
+      
     }
     
 
@@ -49,9 +47,12 @@ class ViewControllerB: UIViewController {
         let format = DateFormatter()
         format.dateFormat = "dd MMMM yyyy HH:mm:ss"
         let date = format.string(from:rip_calender.date)
+        if rip_name.text?.isEmpty == false
+              {
         Data.death.append((rip_name.text!, rip_description.text!, date))
 //         Get the new view controller using segue.destination.
 //         Pass the selected object to the new view controller.
+        }
     }
  
 
