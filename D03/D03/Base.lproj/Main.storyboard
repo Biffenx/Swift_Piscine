@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7sV-iK-mbW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="huc-GS-vg4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,6 +33,11 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Vz-3S-Iay">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="390"/>
                                         </imageView>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="r0F-Nf-ghN">
+                                            <rect key="frame" x="150" y="150" width="20" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="color" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </activityIndicatorView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="2Vz-3S-Iay" firstAttribute="centerX" secondItem="boh-oC-br5" secondAttribute="centerX" constant="35" id="A7j-ci-EpQ"/>
@@ -42,6 +48,8 @@
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="imagePic" destination="2Vz-3S-Iay" id="wEt-Rm-Rdm"/>
+                                    <outlet property="loader" destination="r0F-Nf-ghN" id="6Qw-iA-I3E"/>
+                                    <segue destination="kQO-BV-PdI" kind="show" id="BMX-4U-owh"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -50,8 +58,43 @@
                             <outlet property="delegate" destination="7sV-iK-mbW" id="ZvM-yB-gBp"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="u8k-T5-YFI"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvH-8W-zoO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="359.4202898550725" y="-10.044642857142856"/>
+        </scene>
+        <!--Large View Controller-->
+        <scene sceneID="6Ne-GM-2cZ">
+            <objects>
+                <viewController id="kQO-BV-PdI" customClass="LargeViewController" customModule="D03" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0wZ-rM-SCS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="AxH-mc-SJ3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OBJ-Ws-ay7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uPx-Em-cf0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173.913043478261" y="-7.3660714285714279"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aiG-Xf-of2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="huc-GS-vg4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jvs-uV-2kA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7sV-iK-mbW" kind="relationship" relationship="rootViewController" id="LhL-yv-7CW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYN-NC-zIE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-550.72463768115949" y="-10.044642857142856"/>
         </scene>

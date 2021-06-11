@@ -8,31 +8,46 @@
 
 import UIKit
 
+protocol CVCDelegate {
+   func alert()
+}
+
 class CollectionViewCell: UICollectionViewCell {
     
     
     @IBOutlet weak var imagePic: UIImageView!
+    @IBOutlet weak var loader: UIActivityIndicatorView!
     
+    var delegate: CVCDelegate?
     func configure(with imageURL: String)
     {
+    
+        loader.hidesWhenStopped = true
+        loader.startAnimating()
         guard let url = URL(string: imageURL) else
         {
             return
         }
         DispatchQueue.global().async
             {[weak self] in
-            if let data = try? Data(contentsOf: url)
+            let data = try? Data(contentsOf: url)
+            if data == nil
             {
-                if let image = UIImage(data: data)
+                self?.delegate?.alert()
+                }
+            else{
+
+                if let image = UIImage(data: data!)
                 {
                     DispatchQueue.main.async
                         {
                             self?.imagePic.image = image
+                            self?.loader.stopAnimating()
                         }
                 }
             }
         }
+        
     }
-    
 
 }

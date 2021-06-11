@@ -15,19 +15,10 @@ struct ImageData {
 }
 
 let imagesURL:[String] = [
-    "https://www.nasa.gov/sites/default/files/thumbnails/image/pia22182.jpg",
-    "https://www.nasa.gov/sites/default/files/thumbnails/image/pia22594.jpg",
-    "https://www.nasa.gov/sites/default/files/thumbnails/image/pia22585.jpg",
+    "https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73726/world.topo.bathy.200406.3x5400x2700.png",
+    "https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     "https://www.nasa.gov/sites/default/files/thumbnails/image/pia22512.jpg",
     "https://www.nasa.gov/sites/default/files/thumbnails/image/pia22182.jpg",
-    "https://www.nasa.gov/sites/default/files/thumbnails/image/pia22438.jpg",
-    "https://www.nasa.gov/sites/default/files/thumbnails/image/pia22238.jpg",
-    "https://www.nasa.gov/sites/default/files/thumbnails/image/pia22237.jpg",
-    "https://www.nasa.gov/sites/default/files/thumbnails/image/pia22236.jpg",
-    "https://www.nasa.gov/sites/default/files/thumbnails/image/pia22235.jpg",
-    "https://www.nasa.gov/sites/default/files/thumbnails/image/pia22234.jpg",
-    "https://www.nasa.gov/sites/default/files/thumbnails/image/pia22233.jpg",
-    "https://www.nasa.gov/sites/default/files/thumbnails/image/pia22232.jpg",
-    "https://www.nasa.gov/sites/default/files/thumbnails/image/pia22231.jpg",
+
 ]
 

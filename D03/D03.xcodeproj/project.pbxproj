@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3471ED6626739C87005523AF /* LargeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3471ED6526739C87005523AF /* LargeViewController.swift */; };
 		349C7AB1267339B100EE7C3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349C7AB0267339B100EE7C3A /* AppDelegate.swift */; };
 		349C7AB3267339B100EE7C3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349C7AB2267339B100EE7C3A /* SceneDelegate.swift */; };
 		349C7AB8267339B100EE7C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349C7AB6267339B100EE7C3A /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3471ED6526739C87005523AF /* LargeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeViewController.swift; sourceTree = "<group>"; };
 		349C7AAD267339B100EE7C3A /* D03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = D03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349C7AB0267339B100EE7C3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		349C7AB2267339B100EE7C3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				349C7ABE267339B300EE7C3A /* Info.plist */,
 				349C7AC426733A3800EE7C3A /* CollectionViewController.swift */,
 				349C7AC626733BF200EE7C3A /* CollectionViewCell.swift */,
+				3471ED6526739C87005523AF /* LargeViewController.swift */,
 				349C7AC826734ABE00EE7C3A /* Images.swift */,
 			);
 			path = D03;
@@ -148,6 +151,7 @@
 				349C7AB1267339B100EE7C3A /* AppDelegate.swift in Sources */,
 				349C7AC926734ABE00EE7C3A /* Images.swift in Sources */,
 				349C7AC726733BF200EE7C3A /* CollectionViewCell.swift in Sources */,
+				3471ED6626739C87005523AF /* LargeViewController.swift in Sources */,
 				349C7AB3267339B100EE7C3A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
